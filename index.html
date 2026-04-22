@@ -7,7 +7,7 @@
     <title>D-4 · CPT208 Group</title>
     <meta
       name="description"
-      content="CPT208 Interaction Design — Group portfolio page (Project Goal, Team Members, User Personas)."
+      content="CPT208 Interaction Design — Group portfolio homepage with five project sections."
     />
 
     <link rel="stylesheet" href="./styles.css" />
@@ -17,7 +17,7 @@
     <section class="logo-splash" id="logoSplash" aria-label="Pockety intro animation">
       <div class="logo-stage">
         <div class="splash-logo-wrap">
-          <img class="splash-logo reveal" src="./images_/127177.PNG" alt="Pockety logo" />
+          <img class="splash-logo reveal" src="./images_home/127177.PNG" alt="Pockety logo" />
         </div>
       </div>
     </section>
@@ -72,37 +72,39 @@
       <div class="container">
         <div class="topbar">
           <div class="brand" aria-label="Site identity">
-            <div class="logo" aria-hidden="true"></div>
+            <img class="logo-mark" src="./images_home/127177.PNG" alt="" aria-hidden="true" />
             <div>
-              <h1>D-4 · CPT208 Group</h1>
-              <p>Interaction Design · Discovering Requirements</p>
+              <h1>Group D-4</h1>
+              <p>FavoriteAgent-Pockety</p>
             </div>
           </div>
-
-          <nav aria-label="Primary">
-            <a class="navlink" href="#goal">Project Goal</a>
-            <a class="navlink" href="#members">Team Members</a>
-            <a class="navlink" href="#personas">User Personas</a>
-            <a class="navlink" href="#portfolio">Portfolio</a>
-            <button class="btn" id="backToWelcomeBtn" type="button" aria-label="Back to welcome page">
-              Back
-            </button>
-            <button class="btn" id="themeBtn" type="button" aria-label="Toggle theme">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path
-                  d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"
-                  stroke="currentColor"
-                  stroke-width="2"
-                />
-                <path
-                  d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-              Theme
-            </button>
+          <nav class="nav-main" aria-label="Primary">
+            <a class="navlink" href="./motivation-research.html">Motivation &amp; Research</a>
+            <a class="navlink" href="./user-requirements.html">User Requirements</a>
+            <a class="navlink" href="./ideation-alternatives.html">Ideation &amp; Alternatives</a>
+            <a class="navlink" href="./technical-implementation.html">Technical Implementation</a>
+            <a class="navlink" href="./evaluation-reflection.html">Evaluation &amp; Reflection</a>
+            <div class="nav-actions">
+              <button class="btn" id="backToWelcomeBtn" type="button" aria-label="Back to welcome page">
+                Back
+              </button>
+              <button class="btn" id="themeBtn" type="button" aria-label="Toggle theme">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                Theme
+              </button>
+            </div>
           </nav>
         </div>
       </div>
@@ -110,6 +112,33 @@
 
       <main id="content">
         <div class="container">
+          <section id="product-intro" aria-label="Pockety product introduction">
+            <div class="section-head">
+              <h3>Pockety Favorite Agent</h3>
+              <p>A playful AI system for cross-platform favorites digestion</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <p class="value">
+                  Tired of endlessly saving tutorials, articles, and videos across Bilibili, RedNote, Douyin, and
+                  CSDN, only to never revisit your ever-growing collection?
+                </p>
+                <p class="value">
+                  Pockety is an AI-powered favorites management system built to cure modern
+                  <strong>Collection Digestion Disorder</strong>. It automatically syncs and categorizes cross-platform
+                  saved content, generates personalized weekly knowledge digests and audio summaries, builds an
+                  interactive visualized knowledge graph from scattered favorites, and lets users chat and ask
+                  questions directly over their own saved library with advanced RAG-powered AI.
+                </p>
+                <p class="value">
+                  Designed with a human-centric and playful experience, Pockety transforms idle "save and forget"
+                  clutter into an organized, actively growing personal knowledge base, making learning effortless and
+                  efficient.
+                </p>
+              </div>
+            </article>
+          </section>
+
           <section id="members" aria-label="Team members">
             <div class="members-grid" role="list">
               <article class="member-card member-pink" role="listitem">
@@ -117,7 +146,7 @@
                   <div class="member-face member-face-front">
                     <div class="id-strip">ID card</div>
                     <div class="member-avatar" aria-hidden="true">
-                      <img src="./images_/jingxuan-weng.png" alt="" loading="lazy" decoding="async" />
+                      <img src="./images_home/jingxuan-weng.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <p class="name">Jingxuan Weng</p>
                     <p class="meta">2364452</p>
@@ -137,7 +166,7 @@
                   <div class="member-face member-face-front">
                     <div class="id-strip">ID card</div>
                     <div class="member-avatar" aria-hidden="true">
-                      <img src="./images_/haotian-ma.png" alt="" loading="lazy" decoding="async" />
+                      <img src="./images_home/haotian-ma.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <p class="name">Haotian Ma</p>
                     <p class="meta">2361009</p>
@@ -157,7 +186,7 @@
                   <div class="member-face member-face-front">
                     <div class="id-strip">ID card</div>
                     <div class="member-avatar" aria-hidden="true">
-                      <img src="./images_/zeyu-yin.png" alt="" loading="lazy" decoding="async" />
+                      <img src="./images_home/zeyu-yin.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <p class="name">Zeyu Yin</p>
                     <p class="meta">2360955</p>
@@ -177,7 +206,7 @@
                   <div class="member-face member-face-front">
                     <div class="id-strip">ID card</div>
                     <div class="member-avatar" aria-hidden="true">
-                      <img src="./images_/hongming-guo.png" alt="" loading="lazy" decoding="async" />
+                      <img src="./images_home/hongming-guo.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <p class="name">Hongming Guo</p>
                     <p class="meta">2362959</p>
@@ -188,6 +217,113 @@
                     <div class="id-strip">ID card</div>
                     <p class="desc"><strong>Intro:</strong></p>
                     <p class="desc"><strong>Responsibility:</strong></p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section id="personas" aria-label="User personas">
+            <div class="section-head">
+              <h3>User Personas</h3>
+              <p>Two representative users and their needs</p>
+            </div>
+            <div class="persona-track">
+              <article class="persona-creative persona-left">
+                <div class="persona-creative-head">
+                  <img
+                    class="persona-avatar"
+                    src="./images_User Requirements/yu-chen.png"
+                    alt="Yu Chen avatar"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="persona-head-copy">
+                    <p class="persona-step">Persona 01</p>
+                    <h4>Yu Chen</h4>
+                    <p class="persona-meta">Age 20 · Female · University Student (Computer Science Major)</p>
+                  </div>
+                </div>
+                <div class="persona-creative-body">
+                  <div class="persona-layer">
+                    <p class="label">Typical Behavior</p>
+                    <p class="value">
+                      Watches tutorials on Bilibili daily, saves code on CSDN, and keeps notes on Xiaohongshu.
+                      Believes saving means learning, but revisit rate is below 10%.
+                    </p>
+                  </div>
+                  <div class="persona-layer">
+                    <p class="label">Pain Points</p>
+                    <ul class="bullets">
+                      <li>
+                        <strong>Search Barriers:</strong> Must switch between four apps during exams/projects to find
+                        one remembered technical point.
+                      </li>
+                      <li>
+                        <strong>Anxiety Loop:</strong> More than 500 unread items trigger stress and avoidance.
+                      </li>
+                      <li>
+                        <strong>Logical Disconnect:</strong> Related Bilibili and CSDN content cannot be linked into
+                        one knowledge path.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="persona-layer">
+                    <p class="label">Core Expectations</p>
+                    <p class="value">
+                      Connect cross-platform knowledge, auto-build a knowledge graph, and support Q&amp;A from saved
+                      content.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="persona-creative persona-right">
+                <div class="persona-creative-head">
+                  <img
+                    class="persona-avatar"
+                    src="./images_User Requirements/adam.png"
+                    alt="Adam avatar"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="persona-head-copy">
+                    <p class="persona-step">Persona 02</p>
+                    <h4>Adam</h4>
+                    <p class="persona-meta">Age 22 · Male · Senior Student / Job Seeker / New Intern</p>
+                  </div>
+                </div>
+                <div class="persona-creative-body">
+                  <div class="persona-layer">
+                    <p class="label">Typical Behavior</p>
+                    <p class="value">
+                      Saves resume/interview/internship/product resources in bursts. Adds dozens weekly but rarely
+                      revisits, so the collection becomes a mental comfort zone.
+                    </p>
+                  </div>
+                  <div class="persona-layer">
+                    <p class="label">Pain Points</p>
+                    <ul class="bullets">
+                      <li>
+                        <strong>Asset Fragility:</strong> Valuable saved content is later deleted or paywalled,
+                        causing frustration and helplessness.
+                      </li>
+                      <li>
+                        <strong>Categorization Fatigue:</strong> Manual tagging is tiring, but no tagging leads to
+                        chaos and a dumping-ground folder.
+                      </li>
+                      <li>
+                        <strong>Lack of Reminders:</strong> Key deadlines are missed without proactive reminders, so
+                        plans and actions disconnect.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="persona-layer">
+                    <p class="label">Core Expectations</p>
+                    <p class="value">
+                      Keep reliable backups even if source posts disappear, quickly extract key takeaways, and
+                      categorize/tag content for easier retrieval.
+                    </p>
                   </div>
                 </div>
               </article>

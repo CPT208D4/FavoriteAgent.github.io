@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Motivation &amp; Research · D-4</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="topbar">
+          <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <div>
+              <h1>Motivation &amp; Research</h1>
+              <p>D-4 · CPT208 Group</p>
+            </div>
+          </div>
+          <nav aria-label="Sub page nav">
+            <a class="navlink" href="./index.html?home=1#content">Back to Home</a>
+            <button class="btn" id="themeBtn" type="button" aria-label="Toggle theme">Theme</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="panel">
+          <div class="panel-inner">
+            <h2>Motivation &amp; Research</h2>
+            <p class="value">This section explains why the problem matters, where existing work falls short, and who our key stakeholders are.</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h3>The Why</h3>
+            <p>From excessive saving to poor digestion</p>
+          </div>
+          <article class="panel">
+            <div class="panel-inner">
+              <p class="value">
+                In the current era of severe information overload, college students consume fragmented content from
+                WeChat, Douyin, RedNote, and Bilibili every day. They frequently save articles, videos, notes, and
+                resources to platform favorites, expecting to review, learn, and digest them later.
+              </p>
+              <p class="value">
+                However, long-term observation and student surveys reveal a common pattern: most saved items are never
+                reopened, reread, or learned. Instead, they accumulate as unusable digital clutter, forming a typical
+                <strong>Collection-Digestion Disorder</strong>.
+              </p>
+              <p class="value">
+                The gap between active collection and passive abandonment wastes information resources, reduces
+                learning efficiency, and fragments personal knowledge. Existing tools either focus on simple bookmark
+                storage or lack playful, automated digestion mechanisms.
+              </p>
+              <p class="value">
+                Therefore, our team chose this user-centered intelligent knowledge-management direction. We propose
+                Pockety (FavoriteAgent) to unify cross-platform favorites, automate organization, provide playful
+                periodic digests, and build a queryable personal knowledge base that turns dormant collections into
+                usable knowledge.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h3>The Gap</h3>
+            <p>Literature and product benchmark analysis</p>
+          </div>
+
+          <article class="panel">
+            <div class="panel-inner">
+              <h4>1. Research Literature</h4>
+
+              <div class="persona-layer">
+                <p class="value">
+                  <strong>1.1 Knowledge Graph Generation and Application for Unstructured Data Using Data Processing Pipeline</strong><br />
+                  S. Thushara Sukumar, C.-H. Lung, M. Zaman and R. Panday, IEEE Access, vol. 12, pp. 136759-136770,
+                  2024, doi: 10.1109/ACCESS.2024.3462635.
+                </p>
+                <p class="value"><strong>Did Well:</strong></p>
+                <ul class="bullets">
+                  <li>Multi-modal entity and relation extraction for text, image, and video.</li>
+                  <li>User-interest-aware semantic tagging and deduplication.</li>
+                  <li>Cross-source knowledge fusion to reduce redundancy.</li>
+                </ul>
+                <p class="value"><strong>Missed:</strong></p>
+                <ul class="bullets">
+                  <li>No audio/podcast generation for commuting scenarios.</li>
+                  <li>No spaced-repetition memory-card scheduling.</li>
+                  <li>No real-time crawling for major Chinese platforms (Douyin / Xiaohongshu / Bilibili).</li>
+                </ul>
+              </div>
+
+              <div class="persona-layer" style="margin-top: 12px">
+                <p class="value">
+                  <strong>1.2 Retrieval-augmented generation for educational application: A systematic survey</strong><br />
+                  <a href="https://doi.org/10.1016/j.caeai.2025.100417" target="_blank" rel="noopener noreferrer">
+                    https://doi.org/10.1016/j.caeai.2025.100417
+                  </a>
+                </p>
+                <p class="value"><strong>Did Well:</strong></p>
+                <ul class="bullets">
+                  <li>Context-aware retrieval improves RAG answer accuracy.</li>
+                  <li>Dynamic incremental updates for newly saved content.</li>
+                  <li>Personalized summarization adjusted to user expertise.</li>
+                </ul>
+                <p class="value"><strong>Missed:</strong></p>
+                <ul class="bullets">
+                  <li>No visualized knowledge-graph presentation.</li>
+                  <li>No automatic flashcard generation for hard knowledge.</li>
+                  <li>No batch processing for daily favorites digest.</li>
+                </ul>
+              </div>
+
+              <div class="persona-layer" style="margin-top: 12px">
+                <p class="value">
+                  <strong>1.3 Personalized Language Learning Using Spaced Repetition Scheduling</strong><br />
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-031-98459-4_19"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://link.springer.com/chapter/10.1007/978-3-031-98459-4_19
+                  </a>
+                </p>
+                <p class="value"><strong>Did Well:</strong></p>
+                <ul class="bullets">
+                  <li>Forgetting-aware tracing combines deep learning and memory modeling.</li>
+                  <li>RL-based scheduling optimizes review timing from real feedback.</li>
+                  <li>Real-world validation shows measurable gains on language-learning datasets.</li>
+                </ul>
+                <p class="value"><strong>Missed:</strong></p>
+                <ul class="bullets">
+                  <li>Narrow scope: mainly for language learning, not general knowledge management.</li>
+                  <li>No multi-modal support for audio output or knowledge-graph visualization.</li>
+                  <li>No platform integration with Douyin / Xiaohongshu / Bilibili.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel" style="margin-top: 14px">
+            <div class="panel-inner">
+              <h4>2. Product Benchmark</h4>
+
+              <div class="persona-layer">
+                <p class="value"><strong>2.1 NotebookLM (Google)</strong></p>
+                <p class="value"><strong>Did Well:</strong></p>
+                <ul class="bullets">
+                  <li>High-quality AI audio overviews and dialogue-style podcasts.</li>
+                  <li>Strong source-grounded RAG with low hallucination risk.</li>
+                  <li>Cross-document relation mining.</li>
+                </ul>
+                <p class="value"><strong>Missed:</strong></p>
+                <ul class="bullets">
+                  <li>No native support for Douyin / Xiaohongshu / Bilibili.</li>
+                  <li>No automatic memory/flashcard generation.</li>
+                  <li>No interactive visual knowledge graph.</li>
+                </ul>
+              </div>
+
+              <div class="persona-layer" style="margin-top: 12px">
+                <p class="value"><strong>2.2 Karakeep</strong></p>
+                <p class="value"><strong>Did Well:</strong></p>
+                <ul class="bullets">
+                  <li>Self-hosted privacy and full webpage archiving.</li>
+                  <li>AI auto-tagging and full-text search across formats.</li>
+                  <li>Video support via yt-dlp for Bilibili-like sources.</li>
+                </ul>
+                <p class="value"><strong>Missed:</strong></p>
+                <ul class="bullets">
+                  <li>No built-in TTS podcast generation.</li>
+                  <li>No spaced-repetition flashcard system.</li>
+                  <li>Weak knowledge graph, mainly tag-based association.</li>
+                </ul>
+              </div>
+
+              <div class="persona-layer" style="margin-top: 12px">
+                <p class="value"><strong>2.3 Cubox</strong></p>
+                <p class="value"><strong>Did Well:</strong></p>
+                <ul class="bullets">
+                  <li>Strong WeChat ecosystem integration.</li>
+                  <li>Mature RAG full-library natural language QA.</li>
+                  <li>Link snapshot and permanent content preservation.</li>
+                </ul>
+                <p class="value"><strong>Missed:</strong></p>
+                <ul class="bullets">
+                  <li>No one-click daily digest audio output.</li>
+                  <li>No automatic hard-knowledge flashcard push.</li>
+                  <li>No interactive knowledge-graph visualization.</li>
+                </ul>
+              </div>
+
+              <div class="persona-layer" style="margin-top: 12px">
+                <p class="value"><strong>2.4 Bilibili-RAG</strong></p>
+                <p class="value"><strong>Did Well:</strong></p>
+                <ul class="bullets">
+                  <li>End-to-end Bilibili favorites ASR to vector DB to QA pipeline.</li>
+                  <li>Robust audio extraction and fallback mechanisms.</li>
+                  <li>Open and customizable for secondary development.</li>
+                </ul>
+                <p class="value"><strong>Missed:</strong></p>
+                <ul class="bullets">
+                  <li>Only supports Bilibili, no WeChat/Douyin/Xiaohongshu.</li>
+                  <li>No tagging/categorization system.</li>
+                  <li>No memory-card or podcast-oriented learning features.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h3>The Stakeholders</h3>
+            <p>Primary and secondary users we serve</p>
+          </div>
+          <article class="panel">
+            <div class="panel-inner">
+              <ul class="bullets">
+                <li>University students who rely on digital content for continuous learning.</li>
+                <li>University students preparing for internships and full-time job applications.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./subpage-theme.js"></script>
+  </body>
+</html>
