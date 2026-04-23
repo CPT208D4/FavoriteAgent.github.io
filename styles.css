@@ -168,6 +168,28 @@ body.splash-done .logo-splash {
   overflow: hidden;
   z-index: 0;
 }
+.float-field--ambient {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  min-height: 100%;
+}
+.float-field--page {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+body:has(.float-field--page) > main {
+  position: relative;
+  z-index: 1;
+}
+.site-shell > main {
+  position: relative;
+  z-index: 1;
+}
 .float-icon {
   position: absolute;
   left: 0;
@@ -1077,6 +1099,11 @@ section {
 .ideation-justification h4 {
   margin: 0 0 8px;
   font-size: 16px;
+}
+.lowfi-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 .chipline {
   display: flex;

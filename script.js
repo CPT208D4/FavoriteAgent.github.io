@@ -17,33 +17,10 @@
     const backToWelcomeBtn = document.getElementById("backToWelcomeBtn");
     const entryGate = document.getElementById("entryGate");
     const floatField = document.getElementById("floatField");
+    const siteFloatField = document.getElementById("siteFloatField");
     const revealTargets = document.querySelectorAll("section, .card, .persona, .shot, .stat, .panel, .hero-card");
-    const tones = ["var(--brand-2)", "var(--brand-3)", "var(--brand-4)", "var(--brand-5)", "var(--brand-6)"];
-    const iconKinds = ["star", "bookmark", "folder"];
-  
-    function random(min, max) {
-      return min + Math.random() * (max - min);
-    }
-  
-    function buildFloatingIcons(count) {
-      if (!floatField) return;
-      for (let i = 0; i < count; i++) {
-        const icon = document.createElement("span");
-        icon.className = "float-icon " + iconKinds[Math.floor(Math.random() * iconKinds.length)];
-        icon.style.setProperty("--x", random(1, 98).toFixed(2));
-        icon.style.setProperty("--y", random(2, 97).toFixed(2));
-        icon.style.setProperty("--size", random(10, 34).toFixed(2));
-        icon.style.setProperty("--alpha", random(0.16, 0.54).toFixed(2));
-        icon.style.setProperty("--dur", random(11, 24).toFixed(2) + "s");
-        icon.style.setProperty("--delay", (-random(0, 16)).toFixed(2) + "s");
-        icon.style.setProperty("--dx1", random(-16, 16).toFixed(1) + "px");
-        icon.style.setProperty("--dy1", random(-20, 20).toFixed(1) + "px");
-        icon.style.setProperty("--dx2", random(-18, 18).toFixed(1) + "px");
-        icon.style.setProperty("--dy2", random(-22, 22).toFixed(1) + "px");
-        icon.style.setProperty("--tone", tones[Math.floor(Math.random() * tones.length)]);
-        floatField.appendChild(icon);
-      }
-    }
+    const buildFloat =
+      typeof window.cpt208BuildFloatIcons === "function" ? window.cpt208BuildFloatIcons : function () {}
   
     function collapseIconsToCenter() {
       if (!entryGate || !floatField) return;
@@ -75,7 +52,8 @@
     }
   
     applyTheme(getPreferredTheme());
-    buildFloatingIcons(120);
+    buildFloat(floatField, 120);
+    buildFloat(siteFloatField, 90);
 
     if (shouldOpenHomeDirectly) {
       body.classList.add("splash-done", "is-entered");

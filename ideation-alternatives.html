@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="float-field float-field--page" id="pageFloatField" aria-hidden="true"></div>
     <header>
       <div class="container">
         <div class="topbar">
           <div class="brand">
-            <div class="logo" aria-hidden="true"></div>
+            <img class="logo-mark" src="./images_home/127177.PNG" alt="" aria-hidden="true" />
             <div>
               <h1>Ideation &amp; Alternatives</h1>
               <p>D-4 · CPT208 Group</p>
@@ -96,19 +97,34 @@
           </div>
           <article class="panel">
             <div class="panel-inner">
-              <figure class="media-card">
-                <img
-                  src="./images_Ideation & Alternativesw/low-fi-prototype.png"
-                  alt="Low-fidelity prototype screens for FavoriteAgent including chat, categorization, reports, and profile"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
+              <div class="lowfi-stack">
+                <figure class="media-card">
+                  <img
+                    src="./images_Ideation & Alternativesw/low-fi-prototype-1.png"
+                    alt="Low-fidelity prototype version one"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="media-card">
+                  <img
+                    src="./images_Ideation & Alternativesw/low-fi-prototype-2.png"
+                    alt="Low-fidelity prototype version two"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </main>
+    <script src="./float-icons.js"></script>
+    <script>
+      window.cpt208BuildFloatIcons &&
+        window.cpt208BuildFloatIcons(document.getElementById("pageFloatField"), 80);
+    </script>
     <script src="./subpage-theme.js"></script>
   </body>
 </html>
