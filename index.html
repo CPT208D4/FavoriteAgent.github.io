@@ -13,15 +13,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <body class="is-locked is-splashing">
-    <section class="logo-splash" id="logoSplash" aria-label="Pockety intro animation">
-      <div class="logo-stage">
-        <div class="splash-logo-wrap">
-          <img class="splash-logo reveal" src="./images_home/127177.PNG" alt="Pockety logo" />
-        </div>
-      </div>
-    </section>
-
+  <body class="is-locked">
     <section class="entry-gate" id="entryGate" aria-label="Entrance">
       <div class="float-field" id="floatField" aria-hidden="true"></div>
       <div class="orb one" aria-hidden="true"></div>
@@ -80,11 +72,12 @@
             </div>
           </div>
           <nav class="nav-main" aria-label="Primary">
-            <a class="navlink" href="./motivation-research.html">Motivation &amp; Research</a>
-            <a class="navlink" href="./user-requirements.html">User Requirements</a>
-            <a class="navlink" href="./ideation-alternatives.html">Ideation &amp; Alternatives</a>
-            <a class="navlink" href="./technical-implementation.html">Technical Implementation</a>
-            <a class="navlink" href="./evaluation-reflection.html">Evaluation &amp; Reflection</a>
+            <a class="navlink" href="#project-timeline">Project Timeline</a>
+            <a class="navlink" href="#motivation-research">Motivation &amp; Research</a>
+            <a class="navlink" href="#user-requirements">User Requirements</a>
+            <a class="navlink" href="#ideation-alternatives">Ideation &amp; Alternatives</a>
+            <a class="navlink" href="#technical-implementation">Technical Implementation</a>
+            <a class="navlink" href="#evaluation-reflection">Evaluation &amp; Reflection</a>
             <div class="nav-actions">
               <button class="btn" id="backToWelcomeBtn" type="button" aria-label="Back to welcome page">
                 Back
@@ -113,6 +106,18 @@
 
       <main id="content">
         <div class="container">
+          <p class="unlock-cta unlock-cta--lead">
+            <a
+              class="unlock-cta__link"
+              href="https://pockety-three.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="unlock-cta__label">Unlock Me</span><span class="unlock-cta__colon">：</span>
+              <span class="unlock-cta__url">https://pockety-three.vercel.app</span>
+            </a>
+          </p>
+
           <section id="product-intro" aria-label="Pockety product introduction">
             <div class="section-head">
               <h3>Pockety Favorite Agent</h3>
@@ -141,6 +146,59 @@
           </section>
 
           <section id="members" aria-label="Team members">
+            <div class="section-head">
+              <h3 id="three-playful-requirements-heading">Three Playful Requirements</h3>
+            </div>
+            <div
+              class="pockety-feature-cards"
+              role="region"
+              aria-labelledby="three-playful-requirements-heading"
+            >
+              <article class="pockety-feature-card">
+                <h4 class="pockety-feature-card__title">
+                  <span class="pockety-feature-card__icon" aria-hidden="true">🧠</span>
+                  AI Agent Q&amp;A
+                </h4>
+                <p class="pockety-feature-card__body">
+                  Not just search — it's a little knowledge buddy. It answers your saved content in a playful,
+                  conversational tone. Turning "dig through my favorites" into "just ask."
+                </p>
+                <blockquote class="pockety-feature-card__quote">
+                  <p>
+                    <em>"What did that Bilibili tutorial say again?" — Just ask Pockety.</em>
+                  </p>
+                </blockquote>
+              </article>
+              <article class="pockety-feature-card">
+                <h4 class="pockety-feature-card__title">
+                  <span class="pockety-feature-card__icon" aria-hidden="true">🏷️</span>
+                  AI-Powered Smart Categorization
+                </h4>
+                <p class="pockety-feature-card__body">
+                  No more messy collections. The system automatically tags your links, notes, and videos, then presents
+                  them in a cute floating-card interface. Organizing becomes surprisingly enjoyable.
+                </p>
+                <blockquote class="pockety-feature-card__quote">
+                  <p><em>From "save and forget" to "feels good to look at."</em></p>
+                </blockquote>
+              </article>
+              <article class="pockety-feature-card">
+                <h4 class="pockety-feature-card__title">
+                  <span class="pockety-feature-card__icon" aria-hidden="true">📊</span>
+                  Playful Weekly Report
+                </h4>
+                <p class="pockety-feature-card__body">
+                  See what you saved, what you missed — visualized in soft cloud-shaped charts. It turns boring stats into
+                  a lighthearted weekly ritual.
+                </p>
+                <blockquote class="pockety-feature-card__quote">
+                  <p>
+                    <em>Not to stress you out. Just a gentle reminder: "Your saved world just grew a little bigger."</em>
+                  </p>
+                </blockquote>
+              </article>
+            </div>
+
             <div class="members-grid" role="list">
               <article class="member-card member-pink" role="listitem">
                 <div class="member-card-inner">
@@ -156,8 +214,11 @@
                   </div>
                   <div class="member-face member-face-back">
                     <div class="id-strip">ID card</div>
-                    <p class="desc"><strong>Intro:</strong></p>
-                    <p class="desc"><strong>Responsibility:</strong></p>
+                    <p class="desc"><strong>Intro:</strong> UI Designer / Front-end Developer</p>
+                    <p class="desc">
+                      <strong>Responsibility:</strong> Designed the project UI in Figma and developed the Process
+                      Portfolio website on GitHub.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -176,8 +237,12 @@
                   </div>
                   <div class="member-face member-face-back">
                     <div class="id-strip">ID card</div>
-                    <p class="desc"><strong>Intro:</strong></p>
-                    <p class="desc"><strong>Responsibility:</strong></p>
+                    <p class="desc"><strong>Intro:</strong> Back-end Developer</p>
+                    <p class="desc">
+                      <strong>Responsibility:</strong> Implemented back-end code, fine-tuned the large language model
+                      (LLM) to fit the project theme, and conducted preliminary research on relevant products and
+                      technologies.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -196,8 +261,11 @@
                   </div>
                   <div class="member-face member-face-back">
                     <div class="id-strip">ID card</div>
-                    <p class="desc"><strong>Intro:</strong></p>
-                    <p class="desc"><strong>Responsibility:</strong></p>
+                    <p class="desc"><strong>Intro:</strong> UI Designer / Portfolio Editor</p>
+                    <p class="desc">
+                      <strong>Responsibility:</strong> Designed the project UI in Figma, wrote and integrated the
+                      content of the Process Portfolio, and participated in project testing.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -216,8 +284,11 @@
                   </div>
                   <div class="member-face member-face-back">
                     <div class="id-strip">ID card</div>
-                    <p class="desc"><strong>Intro:</strong></p>
-                    <p class="desc"><strong>Responsibility:</strong></p>
+                    <p class="desc"><strong>Intro:</strong> Team Leader</p>
+                    <p class="desc">
+                      <strong>Responsibility:</strong> Coordinated project progress, handled front-end and back-end
+                      integration, led project testing, and took charge of poster design and production.
+                    </p>
                   </div>
                 </div>
               </article>
@@ -330,9 +401,726 @@
               </article>
             </div>
           </section>
+
+          <section id="project-timeline" class="home-module" aria-labelledby="project-timeline-heading">
+            <div class="section-head">
+              <h3 id="project-timeline-heading">Project Timeline</h3>
+              <p>Weekly milestones across the module</p>
+            </div>
+
+            <div class="process-timeline" role="region" aria-label="Weekly project timeline">
+              <div class="process-timeline__stage">
+                <svg
+                  class="process-timeline__svg"
+                  viewBox="-80 -125 1160 438"
+                  preserveAspectRatio="none"
+                  focusable="false"
+                  role="group"
+                  aria-label="Timeline curve with weekly milestones"
+                >
+                  <defs>
+                    <linearGradient id="processTimelineStroke" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+                      <stop offset="0%" stop-color="#34d399" />
+                      <stop offset="45%" stop-color="#6366f1" />
+                      <stop offset="100%" stop-color="#f97316" />
+                    </linearGradient>
+                    <marker
+                      id="processTimelineArrowEnd"
+                      viewBox="0 0 10 10"
+                      refX="9"
+                      refY="5"
+                      markerWidth="7"
+                      markerHeight="7"
+                      orient="auto"
+                      markerUnits="strokeWidth"
+                    >
+                      <path class="process-timeline__svg-arrowhead" d="M 0 0 L 10 5 L 0 10 Z" />
+                    </marker>
+                  </defs>
+                  
+                  <path
+                    class="process-timeline__curve-bg"
+                    fill="none"
+                    stroke="url(#processTimelineStroke)"
+                    stroke-width="12"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    opacity="0.12"
+                    d="M 40.00,58.40 L 54.60,53.46 L 69.21,50.63 L 83.81,50.08 L 98.41,51.83 L 113.02,55.79 L 127.62,61.75 L 142.22,69.40 L 156.83,78.33 L 171.43,88.09 L 186.03,98.16 L 200.63,108.01 L 215.24,117.13 L 229.84,125.04 L 244.44,131.31 L 259.05,135.64 L 273.65,137.78 L 288.25,137.63 L 302.86,135.19 L 317.46,130.60 L 332.06,124.09 L 346.67,116.00 L 361.27,106.76 L 375.87,96.85 L 390.48,86.79 L 405.08,77.11 L 419.68,68.32 L 434.29,60.86 L 448.89,55.15 L 463.49,51.47 L 478.10,50.02 L 492.70,50.87 L 507.30,53.98 L 521.90,59.19 L 536.51,66.22 L 551.11,74.71 L 565.71,84.21 L 580.32,94.22 L 594.92,104.22 L 609.52,113.68 L 624.13,122.11 L 638.73,129.07 L 653.33,134.20 L 667.94,137.21 L 682.54,137.96 L 697.14,136.41 L 711.75,132.64 L 726.35,126.84 L 740.95,119.33 L 755.56,110.48 L 770.16,100.77 L 784.76,90.71 L 799.37,80.82 L 813.97,71.62 L 828.57,63.59 L 843.17,57.16 L 857.78,52.65 L 872.38,50.31 L 886.98,50.26 L 901.59,52.51 L 916.19,56.92 L 930.79,63.28 L 945.40,71.24 L 960.00,80.40"
+                  />
+                  <path
+                    class="process-timeline__curve"
+                    fill="none"
+                    stroke="url(#processTimelineStroke)"
+                    stroke-width="3.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M 40.00,58.40 L 54.60,53.46 L 69.21,50.63 L 83.81,50.08 L 98.41,51.83 L 113.02,55.79 L 127.62,61.75 L 142.22,69.40 L 156.83,78.33 L 171.43,88.09 L 186.03,98.16 L 200.63,108.01 L 215.24,117.13 L 229.84,125.04 L 244.44,131.31 L 259.05,135.64 L 273.65,137.78 L 288.25,137.63 L 302.86,135.19 L 317.46,130.60 L 332.06,124.09 L 346.67,116.00 L 361.27,106.76 L 375.87,96.85 L 390.48,86.79 L 405.08,77.11 L 419.68,68.32 L 434.29,60.86 L 448.89,55.15 L 463.49,51.47 L 478.10,50.02 L 492.70,50.87 L 507.30,53.98 L 521.90,59.19 L 536.51,66.22 L 551.11,74.71 L 565.71,84.21 L 580.32,94.22 L 594.92,104.22 L 609.52,113.68 L 624.13,122.11 L 638.73,129.07 L 653.33,134.20 L 667.94,137.21 L 682.54,137.96 L 697.14,136.41 L 711.75,132.64 L 726.35,126.84 L 740.95,119.33 L 755.56,110.48 L 770.16,100.77 L 784.76,90.71 L 799.37,80.82 L 813.97,71.62 L 828.57,63.59 L 843.17,57.16 L 857.78,52.65 L 872.38,50.31 L 886.98,50.26 L 901.59,52.51 L 916.19,56.92 L 930.79,63.28 L 945.40,71.24 L 960.00,80.40"
+                  />
+                  <!-- 靠上的节点：箭头向下指入下方框；靠下的节点：箭头向上指入上方框（分界 y≈94） -->
+                  <g class="process-timeline__callouts">
+                    <!-- Week 2–3：靠上 → 下方框 -->
+                    <g class="process-timeline__note-cluster">
+                      <rect class="process-timeline__svg-note" x="-72" y="198" width="228" height="108" rx="10" ry="10" />
+                      <foreignObject x="-72" y="198" width="228" height="108">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="process-timeline__note-html">
+                          <ul>
+                            <li>Brainstorming, discussing and finalising the chosen topic</li>
+                            <li>Creating the GitHub.io website for the Process Portfolio</li>
+                            <li>Researching academic papers and commercial products</li>
+                            <li>Developing user personas and user journey maps</li>
+                            <li>Defining three "playful" requirements</li>
+                          </ul>
+                        </div>
+                      </foreignObject>
+                    </g>
+                    <line
+                      class="process-timeline__svg-arrow"
+                      x1="40"
+                      y1="65.4"
+                      x2="40"
+                      y2="198"
+                      marker-end="url(#processTimelineArrowEnd)"
+                    />
+                    <!-- Week 4：靠下 → 上方框 -->
+                    <g class="process-timeline__note-cluster">
+                      <rect class="process-timeline__svg-note" x="159.65" y="-115" width="228" height="105" rx="10" ry="10" />
+                      <foreignObject x="159.65" y="-115" width="228" height="105">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="process-timeline__note-html">
+                          <ul>
+                            <li>Completing the "Crazy Eights" sketches</li>
+                            <li>Comparing 2–3 design alternatives</li>
+                            <li>Building the low-fidelity prototype</li>
+                            <li>Conducting real user interviews (Evidence of Life)</li>
+                          </ul>
+                        </div>
+                      </foreignObject>
+                    </g>
+                    <line
+                      class="process-timeline__svg-arrow"
+                      x1="273.65"
+                      y1="130.78"
+                      x2="273.65"
+                      y2="-10"
+                      marker-end="url(#processTimelineArrowEnd)"
+                    />
+                    <!-- Week 5–6：靠上 → 下方框 -->
+                    <g class="process-timeline__note-cluster">
+                      <rect class="process-timeline__svg-note" x="364.1" y="198" width="228" height="108" rx="10" ry="10" />
+                      <foreignObject x="364.1" y="198" width="228" height="108">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="process-timeline__note-html">
+                          <ul>
+                            <li>Completing the poster draft</li>
+                            <li>Drawing the system architecture diagram</li>
+                            <li>Starting back-end development</li>
+                            <li>Starting high-fidelity web development</li>
+                          </ul>
+                        </div>
+                      </foreignObject>
+                    </g>
+                    <line
+                      class="process-timeline__svg-arrow"
+                      x1="478.1"
+                      y1="57.02"
+                      x2="478.1"
+                      y2="198"
+                      marker-end="url(#processTimelineArrowEnd)"
+                    />
+                    <!-- Week 7–8：靠下 → 上方框 -->
+                    <g class="process-timeline__note-cluster">
+                      <rect class="process-timeline__svg-note" x="568.54" y="-120" width="228" height="110" rx="10" ry="10" />
+                      <foreignObject x="568.54" y="-120" width="228" height="110">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="process-timeline__note-html">
+                          <ul>
+                            <li>Completing initial development and conducting the first round of usability testing</li>
+                            <li>Making iterative refinements based on user feedback</li>
+                          </ul>
+                        </div>
+                      </foreignObject>
+                    </g>
+                    <line
+                      class="process-timeline__svg-arrow"
+                      x1="682.54"
+                      y1="130.96"
+                      x2="682.54"
+                      y2="-10"
+                      marker-end="url(#processTimelineArrowEnd)"
+                    />
+                    <!-- Week 9–10：靠上 → 下方框 -->
+                    <g class="process-timeline__note-cluster">
+                      <rect class="process-timeline__svg-note" x="846" y="198" width="228" height="100" rx="10" ry="10" />
+                      <foreignObject x="846" y="198" width="228" height="100">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="process-timeline__note-html">
+                          <ul>
+                            <li>Delivering and deploying the final system</li>
+                            <li>Producing a 2-minute CHI-style teaser video</li>
+                            <li>Completing the final Process Portfolio</li>
+                          </ul>
+                        </div>
+                      </foreignObject>
+                    </g>
+                    <line
+                      class="process-timeline__svg-arrow"
+                      x1="960"
+                      y1="87.4"
+                      x2="960"
+                      y2="198"
+                      marker-end="url(#processTimelineArrowEnd)"
+                    />
+                  </g>
+                  <!-- 节点与折线共用 viewBox 坐标：四极值点 + 终点 -->
+                  <g class="process-timeline__markers">
+                    <text class="process-timeline__svg-week" x="40" y="42.4">Week 2–3</text>
+                    <circle class="process-timeline__svg-dot" cx="40" cy="58.4" r="7" />
+                    <text class="process-timeline__svg-week" x="273.65" y="121.78">Week 4</text>
+                    <circle class="process-timeline__svg-dot" cx="273.65" cy="137.78" r="7" />
+                    <text class="process-timeline__svg-week" x="478.1" y="34">Week 5–6</text>
+                    <circle class="process-timeline__svg-dot" cx="478.1" cy="50.02" r="7" />
+                    <text class="process-timeline__svg-week" x="682.54" y="121.96">Week 7–8</text>
+                    <circle class="process-timeline__svg-dot" cx="682.54" cy="137.96" r="7" />
+                    <text class="process-timeline__svg-week" x="960" y="64.4">Week 9–10</text>
+                    <circle class="process-timeline__svg-dot" cx="960" cy="80.4" r="7" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </section>
+
+          <section id="motivation-research" class="home-module" aria-labelledby="motivation-research-heading">
+            <div class="section-head">
+              <h3 id="motivation-research-heading">Motivation &amp; Research</h3>
+              <p>Why the problem matters, where existing work falls short, and who we serve</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <p class="value">This section explains why the problem matters, where existing work falls short, and who our key stakeholders are.</p>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>The Why</h4>
+              <p>From excessive saving to poor digestion</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <p class="value">
+                  In the current era of severe information overload, college students extensively consume fragmented content from WeChat, Douyin, RedNote, and Bilibili daily. They frequently save articles, videos, notes and resources to platform favorites with the positive expectation of reviewing, learning and digesting these materials later. Nevertheless, long-term observations and surveys among student groups reveal an extremely common issue: most saved favorite content is never reopened, read or learned. Instead, it gradually accumulates as useless digital garbage, forming a typical Collection-Digestion Disorder.
+                </p>
+                <p class="value">
+                  This gap between active collection and passive abandonment causes serious waste of information resources, weakens learning efficiency, and leads to fragmented, disorganized personal knowledge. Existing tools either focus on simple bookmark storage or lack playful automated digestion mechanisms. Therefore, our team chooses this user-centric intelligent knowledge management track. We aim to develop Pockety (FavoriteAgent) to unify cross-platform favorites, automate content organization, provide playful periodic digests, and build a queryable personal knowledge base, fundamentally solving Collection-Digestion Disorder and turning dormant collections into usable knowledge for college students.
+                </p>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>The Gap</h4>
+              <p>Literature and product benchmark analysis</p>
+            </div>
+
+            <article class="panel">
+              <div class="panel-inner">
+                <h4>1. Research Literature</h4>
+
+                <div class="table-wrap research-lit-table-wrap">
+                  <table class="contrib-table research-lit-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Paper Title</th>
+                        <th scope="col">Source</th>
+                        <th scope="col">Did Well</th>
+                        <th scope="col">Missed</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <strong>1.1 Knowledge Graph Generation and Application for Unstructured Data Using Data Processing Pipeline</strong>
+                        </td>
+                        <td>
+                          S. Thushara Sukumar, C.-H. Lung, M. Zaman and R. Panday, IEEE Access, vol. 12, pp. 136759-136770,
+                          2024, doi: 10.1109/ACCESS.2024.3462635.
+                        </td>
+                        <td>
+                          Multi-modal entity and relation extraction for text, image, and video.<br />
+                          User-interest-aware semantic tagging and deduplication.<br />
+                          Cross-source knowledge fusion to reduce redundancy.
+                        </td>
+                        <td>
+                          No audio/podcast generation for commuting scenarios.<br />
+                          No spaced-repetition memory-card scheduling.<br />
+                          No real-time crawling for major Chinese platforms (Douyin / Xiaohongshu / Bilibili).
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>1.2 Retrieval-augmented generation for educational application: A systematic survey</strong>
+                        </td>
+                        <td>
+                          <a href="https://doi.org/10.1016/j.caeai.2025.100417" target="_blank" rel="noopener noreferrer">
+                            https://doi.org/10.1016/j.caeai.2025.100417
+                          </a>
+                        </td>
+                        <td>
+                          Context-aware retrieval improves RAG answer accuracy.<br />
+                          Dynamic incremental updates for newly saved content.<br />
+                          Personalized summarization adjusted to user expertise.
+                        </td>
+                        <td>
+                          No visualized knowledge-graph presentation.<br />
+                          No automatic flashcard generation for hard knowledge.<br />
+                          No batch processing for daily favorites digest.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>1.3 Personalized Language Learning Using Spaced Repetition Scheduling</strong>
+                        </td>
+                        <td>
+                          <a
+                            href="https://link.springer.com/chapter/10.1007/978-3-031-98459-4_19"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            https://link.springer.com/chapter/10.1007/978-3-031-98459-4_19
+                          </a>
+                        </td>
+                        <td>
+                          Forgetting-aware tracing combines deep learning and memory modeling.<br />
+                          RL-based scheduling optimizes review timing from real feedback.<br />
+                          Real-world validation shows measurable gains on language-learning datasets.
+                        </td>
+                        <td>
+                          Narrow scope: mainly for language learning, not general knowledge management.<br />
+                          No multi-modal support for audio output or knowledge-graph visualization.<br />
+                          No platform integration with Douyin / Xiaohongshu / Bilibili.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel" style="margin-top: 14px">
+              <div class="panel-inner">
+                <h4>2. Product Benchmark</h4>
+
+                <div class="table-wrap product-benchmark-table-wrap">
+                  <table class="contrib-table product-benchmark-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Did Well</th>
+                        <th scope="col">Missed</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>2.1 NotebookLM (Google)</strong></td>
+                        <td>
+                          High-quality AI audio overviews and dialogue-style podcasts.<br />
+                          Strong source-grounded RAG with low hallucination risk.<br />
+                          Cross-document relation mining.
+                        </td>
+                        <td>
+                          No native support for Douyin / Xiaohongshu / Bilibili.<br />
+                          No automatic memory/flashcard generation.<br />
+                          No interactive visual knowledge graph.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><strong>2.2 Karakeep</strong></td>
+                        <td>
+                          Self-hosted privacy and full webpage archiving.<br />
+                          AI auto-tagging and full-text search across formats.<br />
+                          Video support via yt-dlp for Bilibili-like sources.
+                        </td>
+                        <td>
+                          No built-in TTS podcast generation.<br />
+                          No spaced-repetition flashcard system.<br />
+                          Weak knowledge graph, mainly tag-based association.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><strong>2.3 Cubox</strong></td>
+                        <td>
+                          Strong WeChat ecosystem integration.<br />
+                          Mature RAG full-library natural language QA.<br />
+                          Link snapshot and permanent content preservation.
+                        </td>
+                        <td>
+                          No one-click daily digest audio output.<br />
+                          No automatic hard-knowledge flashcard push.<br />
+                          No interactive knowledge-graph visualization.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><strong>2.4 Bilibili-RAG</strong></td>
+                        <td>
+                          End-to-end Bilibili favorites ASR to vector DB to QA pipeline.<br />
+                          Robust audio extraction and fallback mechanisms.<br />
+                          Open and customizable for secondary development.
+                        </td>
+                        <td>
+                          Only supports Bilibili, no WeChat/Douyin/Xiaohongshu.<br />
+                          No tagging/categorization system.<br />
+                          No memory-card or podcast-oriented learning features.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>The Stakeholders</h4>
+              <p>Primary and secondary users we serve</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <ul class="bullets">
+                  <li>University students who rely on digital content for continuous learning.</li>
+                  <li>University students preparing for internships and full-time job applications.</li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <section id="user-requirements" class="home-module" aria-labelledby="user-requirements-heading">
+            <div class="section-head">
+              <h3 id="user-requirements-heading">User Requirements</h3>
+              <p>Journey analysis, feature requirements, and field evidence</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <p class="value">This section summarizes user needs through journey analysis, feature requirements, and real-life evidence.</p>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>User Journey Map</h4>
+              <p>From collection to review: behavior, pain points, and opportunities</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <figure class="media-card">
+                  <img
+                    src="./images_User Requirements/user-journey-map.png"
+                    alt="User journey map showing stages, behaviors, pain points, opportunities, and competitor issues"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>Requirements List</h4>
+              <p>Core feature requirements derived from user research</p>
+            </div>
+            <div class="requirements-list">
+              <article class="shot requirement-item">
+                <b>AI Agent Q&amp;A</b>
+                <p>Delivers playful, engaging responses that make everyday interactions more enjoyable.</p>
+              </article>
+              <article class="shot requirement-item">
+                <b>AI-assisted Favorite Categorization</b>
+                <p>
+                  Combines a dedicated playful UI with practical categorization, helping users keep their saved content
+                  neat and well organized.
+                </p>
+              </article>
+              <article class="shot requirement-item">
+                <b>Weekly Report</b>
+                <p>
+                  Creates a playful reviewing experience through remarkable statistics and a sense of ritual, encouraging
+                  users to revisit and reflect on the content they have saved.
+                </p>
+              </article>
+            </div>
+
+            <div class="section-head">
+              <h4>Evidence of Life</h4>
+              <p>Interviewing a potential user</p>
+            </div>
+            <div class="evidence-grid">
+              <figure class="media-card">
+                <img src="./images_User Requirements/evidence-life-1.png" alt="Two students observing saved-content usage on laptop in classroom" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="media-card">
+                <img src="./images_User Requirements/evidence-life-2.png" alt="Participant pointing at laptop screen showing saved-content platform" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="media-card">
+                <img src="./images_User Requirements/evidence-life-3.png" alt="Interview scene during field research on content saving habits" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="media-card">
+                <img src="./images_User Requirements/evidence-life-4.png" alt="Dorm study scenario discussing saved information retrieval workflow" loading="lazy" decoding="async" />
+              </figure>
+            </div>
+          </section>
+
+          <section id="ideation-alternatives" class="home-module" aria-labelledby="ideation-alternatives-heading">
+            <div class="section-head">
+              <h3 id="ideation-alternatives-heading">Ideation &amp; Alternatives</h3>
+              <p>Sketches, design alternatives, and low-fidelity prototypes</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <p class="value">This section presents early ideation sketches, design alternatives, and selected low-fidelity prototype directions.</p>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>The &quot;Crazy Eights&quot;</h4>
+              <p>Rapid ideation sketches exploring multiple interaction paths</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <figure class="media-card">
+                  <img
+                    src="./images_Ideation & Alternativesw/crazy-eights.png"
+                    alt="Crazy Eights sketch sheet with multiple mobile interface concepts"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>Design Alternatives</h4>
+              <p>Comparison between original and optimized direction</p>
+            </div>
+            <div class="ideation-alt-grid">
+              <article class="shot ideation-alt-item">
+                <b>Option A (Original)</b>
+                <p>
+                  Rigid, high-saturation solid matcha green flat UI. Lacking depth or whitespace, all modules appear as
+                  monotonous, indistinguishable blocks. Weekly reports rely on rigid text lists - completely lacking any
+                  engaging visual interaction.
+                </p>
+              </article>
+              <article class="shot ideation-alt-item">
+                <b>Option B (Optimized)</b>
+                <p>
+                  We adopted a soft, dreamy pastel gradient system with generous whitespace. Core functions are
+                  structured as independent, elevated floating cards. We introduced a playful cloud-shaped visual
+                  hierarchy for the weekly overview, turning abstract data into friendly, approachable graphics.
+                </p>
+              </article>
+            </div>
+            <article class="panel ideation-justification">
+              <div class="panel-inner">
+                <h4>Justification</h4>
+                <p class="value">
+                  This iteration embodies a Playful design philosophy beyond aesthetics: The gentle, vibrant color
+                  palette and airy layout creates a stress-free environment, dissolving users' anxiety towards their
+                  cluttered collections. Playful cloud visualization transforms tedious data sorting into an intuitive,
+                  delightful experience. Floating cards establish clear visual boundaries, while the whimsical style
+                  aligns perfectly with our AI-powered dialogue and sorting features.
+                </p>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>Low-Fi Prototype</h4>
+              <p>Selected direction translated into low-fidelity mobile interfaces</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <div class="lowfi-stack">
+                  <figure class="media-card">
+                    <img
+                      src="./images_Ideation & Alternativesw/low-fi-prototype-1.png"
+                      alt="Low-fidelity prototype version one"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                  <figure class="media-card">
+                    <img
+                      src="./images_Ideation & Alternativesw/low-fi-prototype-2.png"
+                      alt="Low-fidelity prototype version two"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section id="technical-implementation" class="home-module" aria-labelledby="technical-implementation-heading">
+            <div class="section-head">
+              <h3 id="technical-implementation-heading">Technical Implementation</h3>
+              <p>Architecture, prototype entry, and team contributions</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <p class="value">This section presents architecture assets, prototype entry, and team contributions.</p>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>System Architecture</h4>
+              <p>Architecture diagram</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <figure class="media-card">
+                  <img
+                    src="./images_Technical Implementation/Sequence_diagram.png"
+                    alt="System architecture sequence diagram"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>High-Fi Prototype</h4>
+              <p>URL to the hosted system</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <p class="value">
+                  <strong>URL:</strong>
+                  <a href="https://pockety-three.vercel.app" target="_blank" rel="noopener noreferrer">https://pockety-three.vercel.app</a>
+                </p>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>Individual Contributions</h4>
+              <p>Role assignment and specific deliverables</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <div class="table-wrap">
+                  <table class="contrib-table">
+                    <thead>
+                      <tr>
+                        <th>Team Member</th>
+                        <th>Role</th>
+                        <th>Specific Contributions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Honming Guo</td>
+                        <td>Leader</td>
+                        <td>
+                          Designed and completed the project poster; conducted front-end and back-end integration; took
+                          charge of project testing.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Haotian Ma</td>
+                        <td>Back-end Developer &amp; Researcher</td>
+                        <td>
+                          Implemented back-end code; adjusted the large language model to adapt to the project theme;
+                          conducted preliminary research on relevant products and technologies.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Jingxuan Weng</td>
+                        <td>UI/UX Designer &amp; Portfolio Developer</td>
+                        <td>
+                          Designed the project UI on Figma; designed and developed the Process Portfolio page on GitHub;
+                          collected and wrote stakeholders information.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Zeyu Yin</td>
+                        <td>UI/UX Designer &amp; Portfolio Editor</td>
+                        <td>
+                          Designed the project UI on Figma; wrote and integrated the content of the Process Portfolio;
+                          took charge of project testing.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section id="evaluation-reflection" class="home-module" aria-labelledby="evaluation-reflection-heading">
+            <div class="section-head">
+              <h3 id="evaluation-reflection-heading">Evaluation &amp; Reflection</h3>
+              <p>Usability findings, iteration direction, and team reflections</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <p class="value">This section summarizes usability findings, iteration direction, and final reflections from the team.</p>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>Usability Testing</h4>
+              <p>Survey and interview feedback after high-fidelity prototype</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner">
+                <ul class="bullets">
+                  <li>After completing the high-fidelity prototype, we conducted a survey and short interviews with volunteers.</li>
+                  <li>
+                    The results showed that the front page was the most confusing part, they reported difficulties in
+                    understanding how to use it and only one participant was aware of the function of this system after
+                    the first seen of this system.
+                  </li>
+                  <li>
+                    Some users also criticized the design of the front page and the report page, and some did not notice
+                    that the favorites collection could be expanded without guidance. One of the users I interviewed told
+                    me that you should add more messages informing users about the ai function, otherwise they might
+                    overlook it.
+                  </li>
+                  <li>
+                    In addition, another user informs me that the ai chatting is not smart enough, which might stick to
+                    the favorite knowledge without considering the meaning of the question. Also, an active question
+                    could be added at the end of each response, which connects and binds more information in the
+                    favorites. None of the participants selected the weekly report as the most valuable feature,
+                    suggesting that this function may need to be redesigned in later iterations.
+                  </li>
+                  <li>Despite these drawbacks, most participants still expressed a willingness to use the system and recommend it to others</li>
+                </ul>
+              </div>
+            </article>
+
+            <div class="section-head">
+              <h4>Iterative Refinement</h4>
+              <p>Improvement direction based on testing insights</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner"></div>
+            </article>
+
+            <div class="section-head">
+              <h4>Final Reflection</h4>
+              <p>What we learned from design and validation</p>
+            </div>
+            <article class="panel">
+              <div class="panel-inner"></div>
+            </article>
+          </section>
+
         </div>
       </main>
     </div>
+
+    <button
+      type="button"
+      class="back-to-top"
+      id="backToTopBtn"
+      aria-label="Back to top"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <span class="back-to-top__glyph" aria-hidden="true">↑</span>
+      <span class="back-to-top__label">Back to top</span>
+    </button>
 
     <script src="./float-icons.js"></script>
     <script src="./script.js"></script>
