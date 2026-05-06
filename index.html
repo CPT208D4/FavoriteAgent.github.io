@@ -73,11 +73,47 @@
           </div>
           <nav class="nav-main" aria-label="Primary">
             <a class="navlink" href="#project-timeline">Project Timeline</a>
-            <a class="navlink" href="#motivation-research">Motivation &amp; Research</a>
-            <a class="navlink" href="#user-requirements">User Requirements</a>
-            <a class="navlink" href="#ideation-alternatives">Ideation &amp; Alternatives</a>
-            <a class="navlink" href="#technical-implementation">Technical Implementation</a>
-            <a class="navlink" href="#evaluation-reflection">Evaluation &amp; Reflection</a>
+            <div class="nav-item">
+              <a class="navlink" href="#motivation-research" aria-haspopup="true">Motivation &amp; Research</a>
+              <ul class="nav-submenu" role="list">
+                <li><a href="#motivation-spark">The Spark: Why This Matters?</a></li>
+                <li><a href="#motivation-gap">What&apos;s Missing in the Wild?</a></li>
+                <li><a href="#motivation-stakeholders">Who Cares &amp; Who Feels</a></li>
+                <li><a href="#personas">User personas</a></li>
+              </ul>
+            </div>
+            <div class="nav-item">
+              <a class="navlink" href="#user-requirements" aria-haspopup="true">User Requirements</a>
+              <ul class="nav-submenu" role="list">
+                <li><a href="#user-journey">A Day in Their Shoes</a></li>
+                <li><a href="#user-requirements-features">From &apos;I Wish&apos; to &apos;It Must&apos;</a></li>
+                <li><a href="#user-evidence">Proof We Listened</a></li>
+              </ul>
+            </div>
+            <div class="nav-item">
+              <a class="navlink" href="#ideation-alternatives" aria-haspopup="true">Ideation &amp; Alternatives</a>
+              <ul class="nav-submenu" role="list">
+                <li><a href="#ideation-wild-beginnings">The Wild Beginnings</a></li>
+                <li><a href="#ideation-options">From Option A to Option B: The Shift We Made</a></li>
+                <li><a href="#ideation-low-fi">First Tangible Shape</a></li>
+              </ul>
+            </div>
+            <div class="nav-item">
+              <a class="navlink" href="#technical-implementation" aria-haspopup="true">Technical Implementation</a>
+              <ul class="nav-submenu" role="list">
+                <li><a href="#technical-architecture">How the Machine Thinks</a></li>
+                <li><a href="#technical-prototype">From Sketch to Clickable Reality</a></li>
+                <li><a href="#technical-contributions">Who Built Which Gear</a></li>
+              </ul>
+            </div>
+            <div class="nav-item">
+              <a class="navlink" href="#evaluation-reflection" aria-haspopup="true">Evaluation &amp; Reflection</a>
+              <ul class="nav-submenu" role="list">
+                <li><a href="#evaluation-usability">Real People, Real Clicks, Real Truth</a></li>
+                <li><a href="#evaluation-iteration">Break It, Fix It, Level Up</a></li>
+                <li><a href="#evaluation-reflection-final">If We Knew Then What We Know Now</a></li>
+              </ul>
+            </div>
             <div class="nav-actions">
               <button class="btn" id="backToWelcomeBtn" type="button" aria-label="Back to welcome page">
                 Back
@@ -490,7 +526,7 @@
             </article>
 
             <div class="section-head">
-              <h4>The Spark: Why This Matters?</h4>
+              <h4 id="motivation-spark">The Spark: Why This Matters?</h4>
               <p>From excessive saving to poor digestion</p>
             </div>
             <article class="panel">
@@ -505,7 +541,7 @@
             </article>
 
             <div class="section-head">
-              <h4>What's Missing in the Wild?</h4>
+              <h4 id="motivation-gap">What&apos;s Missing in the Wild?</h4>
               <p>Literature and product benchmark analysis</p>
             </div>
 
@@ -647,7 +683,7 @@
             </article>
 
             <div class="section-head">
-              <h4>Who Cares & Who Feels</h4>
+              <h4 id="motivation-stakeholders">Who Cares &amp; Who Feels</h4>
               <p>Primary and secondary users we serve</p>
             </div>
             <article class="panel">
@@ -775,7 +811,7 @@
             </article>
 
             <div class="section-head">
-              <h4>A Day in Their Shoes</h4>
+              <h4 id="user-journey">A Day in Their Shoes</h4>
               <p>From collection to review: behavior, pain points, and opportunities</p>
             </div>
             <article class="panel">
@@ -792,7 +828,7 @@
             </article>
 
             <div class="section-head">
-              <h4>From 'I Wish' to 'It Must'</h4>
+              <h4 id="user-requirements-features">From &apos;I Wish&apos; to &apos;It Must&apos;</h4>
               <p>Core feature requirements derived from user research</p>
             </div>
             <div class="requirements-list">
@@ -817,7 +853,7 @@
             </div>
 
             <div class="section-head">
-              <h4>Proof We Listened</h4>
+              <h4 id="user-evidence">Proof We Listened</h4>
               <p>Interviewing a potential user</p>
             </div>
             <div class="evidence-grid">
@@ -848,7 +884,7 @@
             </article>
 
             <div class="section-head">
-              <h4>The Wild Beginnings</h4>
+              <h4 id="ideation-wild-beginnings">The Wild Beginnings</h4>
               <p>Rapid ideation sketches exploring multiple interaction paths</p>
             </div>
             <article class="panel">
@@ -865,7 +901,7 @@
             </article>
 
             <div class="section-head">
-              <h4>From Option A to Option B: The Shift We Made</h4>
+              <h4 id="ideation-options">From Option A to Option B: The Shift We Made</h4>
               <p>Comparison between original and optimized direction</p>
             </div>
             <div class="ideation-alt-grid">
@@ -900,7 +936,7 @@
             </article>
 
             <div class="section-head">
-              <h4>First Tangible Shape</h4>
+              <h4 id="ideation-low-fi">First Tangible Shape</h4>
               <p>Selected direction translated into low-fidelity mobile interfaces</p>
             </div>
             <article class="panel">
@@ -947,7 +983,7 @@
             </article>
 
             <div class="section-head">
-              <h4>How the Machine Thinks</h4>
+              <h4 id="technical-architecture">How the Machine Thinks</h4>
               <p>Architecture diagram</p>
             </div>
             <article class="panel">
@@ -964,7 +1000,7 @@
             </article>
 
             <div class="section-head">
-              <h4>From Sketch to Clickable Reality</h4>
+              <h4 id="technical-prototype">From Sketch to Clickable Reality</h4>
               <p>URL to the hosted system</p>
             </div>
             <article class="panel">
@@ -977,7 +1013,7 @@
             </article>
 
             <div class="section-head">
-              <h4>Who Built Which Gear</h4>
+              <h4 id="technical-contributions">Who Built Which Gear</h4>
               <p>Role assignment and specific deliverables</p>
             </div>
             <article class="panel">
@@ -1043,7 +1079,7 @@
             </article>
 
             <div class="section-head">
-              <h4>Real People, Real Clicks, Real Truth</h4>
+              <h4 id="evaluation-usability">Real People, Real Clicks, Real Truth</h4>
               <p>Survey and interview feedback after high-fidelity prototype</p>
             </div>
             <article class="panel">
@@ -1074,7 +1110,7 @@
             </article>
 
             <div class="section-head">
-              <h4>Break It, Fix It, Level Up</h4>
+              <h4 id="evaluation-iteration">Break It, Fix It, Level Up</h4>
               <p>Improvement direction based on testing insights</p>
             </div>
             <article class="panel">
@@ -1082,7 +1118,7 @@
             </article>
 
             <div class="section-head">
-              <h4>If We Knew Then What We Know Now</h4>
+              <h4 id="evaluation-reflection-final">If We Knew Then What We Know Now</h4>
               <p>What we learned from design and validation</p>
             </div>
             <article class="panel">

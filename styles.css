@@ -495,6 +495,69 @@ nav {
   box-shadow: var(--ring);
 }
 
+/* 主导航：悬停或键盘聚焦时展开小节锚点 */
+.nav-item {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+}
+.nav-submenu {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 25;
+  min-width: 240px;
+  max-width: min(340px, calc(100vw - 24px));
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 140ms ease, visibility 140ms ease;
+}
+.nav-item:hover .nav-submenu,
+.nav-item:focus-within .nav-submenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.nav-submenu li {
+  margin: 0;
+}
+.nav-submenu a {
+  display: block;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 2px 6px;
+}
+.nav-submenu a:hover {
+  background: var(--panel);
+  color: var(--text);
+}
+.nav-submenu a:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+main h4[id],
+#personas {
+  scroll-margin-top: 92px;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
