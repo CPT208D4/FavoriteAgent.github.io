@@ -1128,9 +1128,14 @@ main#content {
   perspective: 1200px;
   transition: transform 140ms ease;
 }
-.member-card:hover {
-  transform: translateY(-8px);
-  animation: cardHoverWiggle 0.9s ease-in-out infinite;
+@media (hover: hover) and (pointer: fine) {
+  .member-card:hover {
+    transform: translateY(-8px);
+    animation: cardHoverWiggle 0.9s ease-in-out infinite;
+  }
+  .member-card:hover .member-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 .member-card-inner {
   position: relative;
@@ -1140,8 +1145,14 @@ main#content {
   transform-style: preserve-3d;
   transition: transform 560ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-.member-card:hover .member-card-inner {
+.member-card.is-flipped .member-card-inner {
   transform: rotateY(180deg);
+}
+@media (hover: none) {
+  .member-card {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 .member-face {
   position: absolute;
@@ -1441,6 +1452,57 @@ main#content {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
+.evidence-grid.evidence-proof-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.evidence-grid.evidence-proof-three > .media-card:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.evidence-grid.evidence-proof-three > .media-card:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.evidence-grid.evidence-proof-three > .media-card:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.evidence-grid.evidence-proof-three > .media-card:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.evidence-grid.evidence-proof-three > .evidence-proof-three__kife {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.evidence-grid.evidence-proof-three > .evidence-proof-three__kife img {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center center;
+}
+
+@media (min-width: 981px) {
+  .evidence-grid.evidence-proof-three > .media-card:nth-child(-n + 4) {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    align-self: stretch;
+  }
+  .evidence-grid.evidence-proof-three > .media-card:nth-child(-n + 4) img {
+    flex: 1 1 auto;
+    width: 100%;
+    min-height: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
 .iteration-grid {
   margin-top: 16px;
 }
@@ -1750,6 +1812,19 @@ footer {
   }
   .evidence-grid {
     grid-template-columns: 1fr;
+  }
+  .evidence-grid.evidence-proof-three > .media-card {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .evidence-grid.evidence-proof-three > .evidence-proof-three__kife {
+    display: block;
+  }
+  .evidence-grid.evidence-proof-three > .evidence-proof-three__kife img {
+    flex: none;
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
   }
   .persona-creative {
     width: 100%;

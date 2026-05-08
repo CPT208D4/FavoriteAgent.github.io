@@ -51,6 +51,46 @@
     buildFloat(floatField, 120);
     buildFloat(siteFloatField, 90);
 
+    (function initMemberCardFlip() {
+      const memberCards = document.querySelectorAll(".member-card");
+      if (!memberCards.length || !window.matchMedia) return;
+      const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+      function syncTapAffordance() {
+        memberCards.forEach(function (card) {
+          if (mq.matches) {
+            card.classList.remove("is-flipped");
+            card.removeAttribute("tabindex");
+            card.removeAttribute("aria-expanded");
+            card.removeAttribute("aria-label");
+          } else {
+            card.setAttribute("tabindex", "0");
+            card.setAttribute("aria-expanded", card.classList.contains("is-flipped") ? "true" : "false");
+            card.setAttribute("aria-label", "Team member card; tap to flip for details");
+          }
+        });
+      }
+
+      function bindTapFlip(card) {
+        card.addEventListener("click", function () {
+          if (mq.matches) return;
+          card.classList.toggle("is-flipped");
+          card.setAttribute("aria-expanded", card.classList.contains("is-flipped") ? "true" : "false");
+        });
+        card.addEventListener("keydown", function (e) {
+          if (mq.matches) return;
+          if (e.key !== "Enter" && e.key !== " ") return;
+          e.preventDefault();
+          card.classList.toggle("is-flipped");
+          card.setAttribute("aria-expanded", card.classList.contains("is-flipped") ? "true" : "false");
+        });
+      }
+
+      memberCards.forEach(bindTapFlip);
+      mq.addEventListener("change", syncTapAffordance);
+      syncTapAffordance();
+    })();
+
     if (shouldOpenHomeDirectly) {
       body.classList.add("is-entered");
       body.classList.remove("is-locked");
