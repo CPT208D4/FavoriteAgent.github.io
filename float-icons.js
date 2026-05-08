@@ -1,7 +1,3 @@
-/**
- * Shared floating bookmark/star/folder shapes (same as welcome page).
- * Exposes window.cpt208BuildFloatIcons(container, count).
- */
 (function (global) {
   const tones = [
     "var(--brand-2)",

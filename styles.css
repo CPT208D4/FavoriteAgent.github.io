@@ -316,7 +316,6 @@ body.is-entered .site-shell {
   pointer-events: auto;
 }
 
-/* 侧栏「回到顶部」快捷入口（英文），向下滚动后显示 */
 .back-to-top {
   position: fixed;
   right: max(32px, env(safe-area-inset-right, 0px));
@@ -395,7 +394,6 @@ header {
   background: color-mix(in oklab, var(--bg) 55%, transparent);
   border-bottom: 1px solid var(--border);
 }
-/* 顶栏通栏：Logo + Group D-4 贴导航条左缘（随 safe-area），链接仍在右侧 */
 header .container {
   width: 100%;
   max-width: none;
@@ -495,7 +493,6 @@ nav {
   box-shadow: var(--ring);
 }
 
-/* 主导航：悬停或键盘聚焦时展开小节锚点 */
 .nav-item {
   position: relative;
   display: inline-flex;
@@ -704,7 +701,6 @@ main#content {
   scroll-margin-top: 92px;
 }
 
-/* 模块主标题（含 Project Timeline 与各章节）：更大字号，纯色（与子区块 h4 区分） */
 .home-module > .section-head:first-of-type,
 #project-timeline > .section-head:first-of-type {
   padding-top: 22px;
@@ -719,7 +715,6 @@ main#content {
   line-height: 1.18;
 }
 
-/* 模块主标题：沿用原渐变中的色相，纯色（非渐变） */
 #project-timeline > .section-head:first-of-type h3 {
   color: #818cf8;
 }
@@ -764,7 +759,6 @@ main#content {
   color: #4338ca;
 }
 
-/* Project Timeline：sin 形曲线，节点绝对定位对齐极值点 */
 .process-timeline {
   margin-top: 2px;
   padding: 4px 0 12px;
@@ -773,7 +767,6 @@ main#content {
   position: relative;
   padding: 28px max(8px, env(safe-area-inset-left, 0px)) 24px max(8px, env(safe-area-inset-right, 0px));
   margin: 0 -4px;
-  /* viewBox 高度 438（含备注框），曲线纵向比例仍按原 188 推算 */
   min-height: 480px;
 }
 .process-timeline__svg {
@@ -893,7 +886,6 @@ main#content {
   font-weight: 800;
 }
 
-/* 子区块标题（The Why、User Journey Map 等）：更小、偏 muted，与五大模块主标题区分 */
 .home-module .section-head h4 {
   font-size: 15px;
   font-weight: 700;
@@ -1482,14 +1474,12 @@ main#content {
   font-weight: 800;
   background: color-mix(in oklab, var(--panel-2) 82%, transparent);
 }
-/* Research Literature：三列表（Paper Title / Did Well / Missed） */
 .research-lit-table-wrap {
   margin-top: 8px;
 }
 .research-lit-table {
   min-width: 760px;
 }
-/* Product Benchmark：三列表（Product / Did Well / Missed） */
 .product-benchmark-table-wrap {
   margin-top: 8px;
 }
