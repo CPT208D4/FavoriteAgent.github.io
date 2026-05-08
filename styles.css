@@ -1512,9 +1512,27 @@ main#content {
   font-size: 16px;
 }
 .lowfi-stack {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  align-items: stretch;
   gap: 14px;
+}
+.lowfi-stack > .media-card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.lowfi-stack > .media-card img {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center center;
+}
+.media-card--eval-pie {
+  max-width: min(520px, 78%);
+  margin-inline: auto;
 }
 .chipline {
   display: flex;
@@ -1803,6 +1821,9 @@ footer {
   }
   .pockety-feature-cards {
     grid-template-columns: 1fr;
+  }
+  .lowfi-stack {
+    flex-direction: column;
   }
 }
 @media (max-width: 1100px) {

@@ -1114,7 +1114,62 @@
               <p>Improvement direction based on testing insights</p>
             </div>
             <article class="panel">
-              <div class="panel-inner"></div>
+              <div class="panel-inner">
+                <p class="value">
+                  In our evaluation, we conducted two rounds of user testing. The first round involved participants who
+                  had previously tested our low-fi prototype, while the second round involved first-time users of the
+                  current system.
+                </p>
+                <p class="value">
+                  The results indicated that the current version still has several usability issues, particularly in
+                  workflow guidance and homepage design. Among users who had tested the low-fi prototype, 25% reported
+                  concerns about the homepage design. However, among first-time users, this complaint rate increased to
+                  35.7%. In terms of function entrances, almost all low-fi prototype users were already familiar with
+                  them, whereas only 70.5% of first-time users clearly understood the meaning of each function entrance.
+                  During the interviews, participants also pointed out that the auto-categorization function lacked
+                  transparency and user autonomy
+                </p>
+                <div class="lowfi-stack">
+                  <figure class="media-card">
+                    <img
+                      src="./images_Evaluation & Reflection/lowfi_user1.png"
+                      alt="User testing results among participants who had tested the low-fi prototype"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                  <figure class="media-card">
+                    <img
+                      src="./images_Evaluation & Reflection/new_user1.png"
+                      alt="User testing results among first-time users of the current system"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                </div>
+                <p class="value">
+                  To address this issue, we made one design improvement. When users upload a file, the system now
+                  displays a notification for five seconds, showing which collection the document has been automatically
+                  stored in. This change aims to make the auto-categorization process more transparent and easier for
+                  users to understand.
+                </p>
+                <p class="value">
+                  Despite these drawbacks, several functions received positive feedback from participants. Among users
+                  who had tested the low-fi prototype, 87.5% stated that they would like to continue using the system.
+                  In addition, most participants were clearly aware of the AI function and were able to use it smoothly.
+                  Overall, 95.5% of participants could interact with the system using ready-made questions, and 81%
+                  found it easy to chat with the AI assistant. The UI design also received positive comments from users,
+                  as shown in the pie chart.
+                </p>
+                <figure class="media-card media-card--eval-pie">
+                  <img
+                    src="./images_Evaluation & Reflection/all_user.png"
+                    alt="Pie chart of positive feedback on UI design and AI-related functions"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
             </article>
 
             <div class="section-head">
@@ -1122,7 +1177,38 @@
               <p>What we learned from design and validation</p>
             </div>
             <article class="panel">
-              <div class="panel-inner"></div>
+              <div class="panel-inner">
+                <p class="value"><strong>Ethic and social impact</strong></p>
+                <p class="value">
+                  Data privacy is a key ethical concern in our system, as users are required to upload content and files.
+                  Since the auto-categorization function needs to analyse the uploaded materials, users should be clearly
+                  informed about how their data is processed, stored, and used. Accessing users&apos; saved or favourite
+                  content should also require explicit user permission. Therefore, our design should reduce unnecessary
+                  data exposure and ensure that users understand how their content is used by the system.
+                </p>
+                <p class="value">
+                  From a social perspective, our design may help users reduce information overload caused by excessive
+                  content saving. However, users should not rely completely on AI-generated summaries or recommendations.
+                  The AI functions should support users&apos; learning, searching, and reviewing processes rather than
+                  replace their own judgement.
+                </p>
+                <p class="value"><strong>AI use</strong></p>
+                <p class="value">
+                  We mainly use generative AI tools (such as Cursor and ChatGPT) as a development assistant to build a
+                  FastAPI back-end framework, connect SQLite and Chroma databases, and reconstruct the HTML exported by
+                  Figma into usable components. This greatly reduces the workload of the sample code and accelerates the
+                  prototype development. However, the code generated by AI is often only applicable to the &quot;ideal
+                  path&quot;, and problems such as upload function, CORS cross-domain restrictions and httpx timeout still
+                  need to be carefully reviewed and debugged manually. In practice, AI is more like a draft generator than a
+                  reliable engineer, and the key links still need to be judged manually.
+                </p>
+                <p class="value">
+                  In general, AI has accelerated the implementation process but failed to replace decision-making. We still
+                  need to judge for ourselves when to adopt AI output, when to rewrite the code and how to deal with the
+                  failure scenario. The project clearly shows that while AI improves productivity, it also expands the
+                  boundaries of responsibility.
+                </p>
+              </div>
             </article>
           </section>
 
@@ -1131,7 +1217,38 @@
               <h3 id="reference-heading">Reference</h3>
             </div>
             <article class="panel">
-              <div class="panel-inner"></div>
+              <div class="panel-inner">
+                <p class="value">
+                  [1] Chatgpt 5.5-Thinking, accessed on 2026-05-02, available at
+                  <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">https://chatgpt.com</a>. Used
+                  for refining grammar mistakes in the script of Video Demo.
+                </p>
+                <p class="value">
+                  [2] Seedance, 2.0, accessed on 2026-05-01, available at
+                  <a href="https://www.doubao.com/" target="_blank" rel="noopener noreferrer">https://www.doubao.com/</a>.
+                  Used for generating the hook part of Video Demo
+                </p>
+                <p class="value">
+                  [3] ElevenLabs, Text to Speech, accessed on 2026-05-08, available at
+                  <a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer">https://elevenlabs.io/</a>.
+                  Used for generating the voice-over audio of the Video Demo.
+                </p>
+                <p class="value">
+                  [4] Chatgpt 5.5-Thinking, accessed on 2026-05-07, available at
+                  <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">https://chatgpt.com</a>. Used
+                  for refining grammar in process portfolio.
+                </p>
+                <p class="value">
+                  [5] Cursor, v0.40, accessed from 2026-03-16 to 2026-05-08, available at
+                  <a href="https://cursor.com/" target="_blank" rel="noopener noreferrer">https://cursor.com</a>. Used for
+                  vibe coding the system&apos;s back-end code, fine-tuning, handling front-end and back-end integration
+                </p>
+                <p class="value">
+                  [6] Cursor, v0.40, accessed from 2026-03-16 to 2026-05-08, available at
+                  <a href="https://cursor.com/" target="_blank" rel="noopener noreferrer">https://cursor.com</a>. Used for
+                  vibe coding the portfolio website.
+                </p>
+              </div>
             </article>
           </section>
 
